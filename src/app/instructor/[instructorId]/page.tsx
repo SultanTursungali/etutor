@@ -1,5 +1,5 @@
-import InstructorProfileHeader from "@/app/components/instructor-profile/InstructorProfileHeader"; // Reusing this component
-import InstructorProfileContent from "@/app/components/instructor-profile/InstructorProfileContent"; // Reusing this component
+import InstructorProfileHeader from "@/app/components/instructor-profile/InstructorProfileHeader";
+import InstructorProfileContent from "@/app/components/instructor-profile/InstructorProfileContent";
 
 export default function InstructorProfilePage() {
   return (
