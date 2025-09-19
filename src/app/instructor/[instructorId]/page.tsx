@@ -1,11 +1,7 @@
 import InstructorProfileHeader from "@/app/components/instructor-profile/InstructorProfileHeader"; // Reusing this component
 import InstructorProfileContent from "@/app/components/instructor-profile/InstructorProfileContent"; // Reusing this component
 
-export default function InstructorProfilePage({
-  params,
-}: {
-  params: { instructorId: string };
-}) {
+export default function InstructorProfilePage() {
   return (
     <>
       <InstructorProfileHeader />

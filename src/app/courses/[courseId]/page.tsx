@@ -6,7 +6,6 @@ import CourseVideoPlayer from "@/app/components/course/CourseVideoPlayer";
 import CourseSidebar from "@/app/components/course/CourseSidebar";
 import CourseContentTabs from "@/app/components/course/CourseContentTabs";
 
-// params will be used later to fetch specific course data, e.g., ({ params }: { params: { courseId: string } })
 export default function SingleCoursePage() {
   return (
     <div className="course-single-section section-padding">
