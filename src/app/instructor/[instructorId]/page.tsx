@@ -16,14 +16,6 @@ export default function InstructorPage({ params }: InstructorPageProps) {
 
 
 
-// OneDrive\Рабочий стол\etutordiplom\src\app\instructor\[instructorId]\page.tsx
-// yes
-interface InstructorPageProps {
-  params: {
-    instructorId: string; // Параметр из URL, например, /instructor/123
-  };
-  searchParams?: { [key: string]: string | string[] | undefined };
-}
 
   const { instructorId } = params; 
   return (

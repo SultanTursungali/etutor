@@ -1,6 +1,5 @@
 // OneDrive\Рабочий стол\etutordiplom\src\app\(dashboard)\student\layout.tsx
 
-import DashboardHeader from "@/app/components/dashboard/DashboardHeader"; // Reusing this component
 import StudentProfileHeader from "@/app/components/dashboard/student/StudentProfileHeader";
 import DashboardTabs from "@/app/components/dashboard/student/DashboardTabs";
 

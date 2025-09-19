@@ -1,5 +1,6 @@
 "use client";
 
+import { useCallback, useMemo } from "react";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -67,10 +68,13 @@ const ComingSoonFooter = () => (
 );
 
 const CountdownTimer = () => {
-  const targetDate = new Date();
-  targetDate.setFullYear(targetDate.getFullYear() + 1);
+  const targetDate = useMemo(() => {
+    const date = new Date();
+    date.setFullYear(date.getFullYear() + 1);
+    return date;
+  }, []);
 
-  const calculateTimeLeft = () => {
+  const calculateTimeLeft = useCallback(() => {
     const difference = +targetDate - +new Date();
     let timeLeft = {
       days: 0,
@@ -88,7 +92,7 @@ const CountdownTimer = () => {
       };
     }
     return timeLeft;
-  };
+  }, [targetDate]);
 
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
@@ -98,7 +102,7 @@ const CountdownTimer = () => {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [calculateTimeLeft]);
 
   const formatNumber = (num: number) => num.toString().padStart(2, "0");
 

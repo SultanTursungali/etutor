@@ -10,8 +10,6 @@ import {
   ShoppingCart,
   X,
   ChevronDown,
-  Phone,
-  Mail,
   Menu,
   Facebook,
   Twitter,

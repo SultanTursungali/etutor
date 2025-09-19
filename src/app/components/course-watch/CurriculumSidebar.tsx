@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { PlayCircle, FileText, CheckCircle, ChevronDown } from "lucide-react";
+import { PlayCircle, CheckCircle, ChevronDown } from "lucide-react";
 
 const curriculumData = [
   {

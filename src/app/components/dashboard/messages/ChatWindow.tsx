@@ -3,7 +3,6 @@ import { Paperclip, Send } from "lucide-react";
 
 const MessageBubble = ({
   text,
-  time,
   isOwn = false,
 }: {
   text: string;
